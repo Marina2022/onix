@@ -77,11 +77,15 @@ button {
   font-size: 16px;
   font-weight: 700;
   line-height: 130%;
-  letter-spacing: 0%;
   text-align: left;
   right: 100px;
+  right: calc((100vw - 1320px)/2);
   bottom: 70px;
   position: absolute;
+
+  @include t {
+    right: 60px;
+  }
 
   @include m {
     right: 20px;
