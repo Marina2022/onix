@@ -54,7 +54,6 @@ const server = (done) => {
 
 // Watcher
 
-
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/**/*.html").on("change", gulp.series(html, browser.reload));
@@ -62,7 +61,6 @@ const watcher = () => {
   gulp.watch("source/js/**/*.js").on("change", gulp.series(scripts));
   gulp.watch("source/img/**/*").on("all", gulp.series(copy, browser.reload));
   //gulp.watch("source/img/**/*").on("all", gulp.series(optimizeImg));
-
 };
 
 export const copy = () => {

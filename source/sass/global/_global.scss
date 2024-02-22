@@ -58,7 +58,6 @@ button {
   background: rgb(108, 37, 190);
   opacity: 0.3;
 
-
   @include m {
     width: 350px;
     height: 350px;
@@ -70,11 +69,9 @@ button {
   display: none;
 }
 
-
 .pages {
   width: 175px;
   height: 21px;
-
   color: rgba(255, 255, 255, .4);
   font-family: GRIFTER;
   font-size: 16px;

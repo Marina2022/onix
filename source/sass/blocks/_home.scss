@@ -16,6 +16,7 @@
 }
 
 .brand {
+  animation: pulsing alternate ease-in-out 2s infinite;
   color: rgb(108, 37, 190);
   font-family: GRIFTER;
   font-size: 176px;
@@ -23,7 +24,6 @@
   line-height: 130%;
   text-align: center;
   text-shadow: rgb(99, 21, 189) 0 0 64px;
-  //text-shadow: rgb(99, 21, 189) 0 0 6px;  - дергаем последнее значения для пульсации
 
   @include m {
     font-size: 25vw;
@@ -54,5 +54,14 @@
 
   @include m {
     font-size: 16px;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    text-shadow: rgb(99, 21, 189) 0 0 6px;
+  }
+  100% {
+    text-shadow: rgb(99, 21, 189) 0 0 64px;
   }
 }
