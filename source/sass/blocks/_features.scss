@@ -1,0 +1,85 @@
+.features__title {
+  color: rgb(255, 255, 255);
+  font-family: GRIFTER;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.features__wrapper {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+
+  @include t1168 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.features__left {
+  max-width: 632px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  width: 100%;
+
+}
+
+.features__right {
+  max-width: 632px;
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  width: 100%;
+
+  @include t1168 {
+    margin-top: 0;
+  }
+}
+
+.features-card {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.05),  rgba(255, 255, 255, 0.2));
+  width: 100%;
+  min-height: 231px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px);
+  background: linear-gradient(226.15deg, rgba(60, 66, 75, 0.03) 0.225%, rgba(57, 65, 77, 0.69) 101.52%);
+  padding: 35px 40px;
+  display: flex;
+  gap: 33px;
+}
+
+.features-card__img {
+  width: 56px;
+  height: 56px;
+}
+
+.features-card__title {
+  font-family: GRIFTER;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  max-width: 230px;
+  margin-bottom: 12px;
+
+  &--long {
+    max-width: 272px;
+  }
+}
+
+.features-card__text {
+  color: rgb(255, 255, 255);
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: left;
+}

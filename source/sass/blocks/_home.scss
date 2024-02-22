@@ -1,0 +1,58 @@
+.brand-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand-block--enter {
+  .brand {
+    font-size: 150px;
+
+    @include m {
+      font-size: 20vw;
+    }
+  }
+}
+
+.brand {
+  color: rgb(108, 37, 190);
+  font-family: GRIFTER;
+  font-size: 176px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  text-shadow: rgb(99, 21, 189) 0 0 64px;
+  //text-shadow: rgb(99, 21, 189) 0 0 6px;  - дергаем последнее значения для пульсации
+
+  @include m {
+    font-size: 25vw;
+  }
+}
+
+.brand__slogan {
+  color: rgb(255, 255, 255);
+  font-family: GRIFTER;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+
+  @include m {
+    font-size: 20px;
+  }
+}
+
+.brand__text {
+  margin-top: 6px;
+  color: rgb(255, 255, 255);
+  font-family: GRIFTER;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+
+  @include m {
+    font-size: 16px;
+  }
+}

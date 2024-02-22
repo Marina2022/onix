@@ -1,0 +1,62 @@
+.multichain__title {
+  color: rgb(255, 255, 255);
+  font-family: GRIFTER;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 211px;
+  margin-bottom: 67px;
+
+  @include t {
+    margin-top: 150px;
+  }
+
+  @include m {
+    margin-top: 100px;
+  }
+}
+
+.multichain__wrapper {
+  display: flex;
+  gap: 27px;
+  width: 100%;
+  justify-content: center;
+
+  @include t {
+    flex-wrap: wrap;
+  }
+}
+
+.multichain-card {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.05),  rgba(255, 255, 255, 0.2));
+  width: 100%;
+  min-height: 310px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px);
+  background: linear-gradient(226.15deg, rgba(60, 66, 75, 0.03) 0.225%, rgba(57, 65, 77, 0.69) 101.52%);
+  padding: 45px;
+  max-width: 422px;
+
+}
+
+.multichain-card__title {
+  font-family: GRIFTER;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  max-width: 230px;
+  margin-bottom: 5px;
+}
+
+.multichain-card__text {
+   color: rgb(255, 255, 255);
+   font-family: Proxima Nova;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 130%;
+   text-align: left;
+ }
